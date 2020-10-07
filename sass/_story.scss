@@ -18,9 +18,12 @@
         // align-items: flex-start;
         /*---------Alignment using flexbox ends-------*/
 
+
+        /*---------Alignment using css grid starts-------*/
         display: grid;
         align-content: center;
         justify-items: start;
+        /*---------Alignment using css grid ends-------*/
     }
 
     &__text{
