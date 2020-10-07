@@ -74,9 +74,6 @@ body {
 .mb-lg {
   margin-bottom: 4rem; }
 
-.mb-hg {
-  margin-bottom: 8rem; }
-
 .sidebar {
   background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
@@ -124,8 +121,7 @@ body {
   /*---------Alignment using css grid starts-------*/
   display: grid;
   align-content: center;
-  justify-items: start;
-  /*---------Alignment using css grid ends-------*/ }
+  justify-items: start; }
 
 .story__text {
   font-size: 1.5rem;
