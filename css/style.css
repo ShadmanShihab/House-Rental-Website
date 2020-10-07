@@ -121,9 +121,11 @@ body {
   padding: 6rem 8vw;
   /*---------Alignment using flexbox starts-------*/
   /*---------Alignment using flexbox ends-------*/
+  /*---------Alignment using css grid starts-------*/
   display: grid;
   align-content: center;
-  justify-items: start; }
+  justify-items: start;
+  /*---------Alignment using css grid ends-------*/ }
 
 .story__text {
   font-size: 1.5rem;
