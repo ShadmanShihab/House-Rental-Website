@@ -112,12 +112,23 @@ body {
     grid-column: 1 / -1; }
 
 .story__pictures {
+<<<<<<< HEAD
   background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/back.jpg);
   grid-column: full-start / col-end 4;
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(6, 1fr);
   align-items: ce; }
+=======
+  background-color: #c69963;
+  grid-column: full-start / col-end 4;
+  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/back.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center; }
+>>>>>>> 269f89b5b8bb3c0295a7db0a2be64a13b5d0d456
 
 .story__img--1 {
   width: 100%;
