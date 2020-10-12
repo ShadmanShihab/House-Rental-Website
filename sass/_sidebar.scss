@@ -2,4 +2,125 @@
     background-color: $color-primary;
     grid-column: sidebar-start / sidebar-end;
     grid-row: 1 / -1;       //-1 = last row
+
+    display: flex;
+    justify-content: center;
+
+ 
+    @media only screen and (max-width: $bp-large){
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;    
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+
+    .menu-icon{
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    
+    .cross-btn{
+        position: relative;
+        top: 3rem;
+        left: 200%;
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 20;
+    }
+}
+
+.menu-icon{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+
+
+    @media only screen and (max-width: $bp-large){
+        margin-left: 5rem;
+    }
+}
+
+/*
+.nav-btn{
+    border: none;
+    border-radius: 0;
+
+    background-color: #fff;
+    height: 2px;
+    width: 4.5rem;
+    margin-top: 4rem;
+
+    &::before,
+    &::after{
+        background-color: #fff;
+        height: 2px;
+        width: 4.5rem;
+        content: "";
+        display: block;
+    }
+
+    &::before{ transform: translateY(-1.5rem); }
+    &::after{ transform: translateY(1.3rem); }
+}
+
+
+.nav-btn :hover {
+    transform: translateY(-5rem);
+}
+*/
+
+
+
+.menu-container{
+    position: relative;
+
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+
+    .menu-content{
+        margin-top: 15rem;
+        text-decoration: none;
+
+        list-style: none;
+
+        a{
+            padding: 3rem;
+            text-decoration: none;
+            font-size: 2rem;
+            color: #fff;
+            display: block;
+
+            &:hover{
+                transform: scale(1.2);
+                color: sandybrown;
+            }
+        }
+    }
+
+
+    .cross-btn{
+        position: absolute;
+        top: -3px;
+        left: 2rem;
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 20;
+    }
+    
 }
